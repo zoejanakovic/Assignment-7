@@ -10,8 +10,14 @@ package assignment7;
  */
 public class A7Q9 {
     
-    public static void allDigitsOdd(int num){
-        
+    public static boolean allDigitsOdd(int num){
+        while(num>=1){
+            int remainder = num%10;
+            if(remainder%2 == 0){
+                boolean tOrF =
+            }
+        }
+        return tOrF;
     }
 
     /**
