@@ -10,21 +10,31 @@ package assignment7;
  */
 public class A7Q9 {
     
-    public static boolean allDigitsOdd(int num){
-        while(num>=1){
-            int remainder = num%10;
-            if(remainder%2 == 0){
-                boolean tOrF =
+    //method to check if all the digits are odd in a number and tell user if true or false
+    public static void allDigitsOdd(int num) {
+
+        //loop to check all the digits in the number by breaking into its digits
+        while (num >= 1) {
+            int remainder = num % 10;
+            
+            //if statements to check if the digits are even or odd
+            //as soon as even, output false, if all are checked and odd, output false
+            if (remainder % 2 == 0) {
+                System.out.println(false);
+                break;
+            } else if (remainder % 2 != 0 && num < 10) {
+                System.out.println(true);
             }
+            num = num / 10;
         }
-        return tOrF;
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        allDigitsOdd(378);
+
+        // call method allDigitsOdd where the number is 879
+        allDigitsOdd(879);
     }
 }

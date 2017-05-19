@@ -9,10 +9,10 @@ package assignment7;
  * @author Janaz9178
  */
 public class A7Q8 {
-    
+
     //method to determine and output the season of a given month and day
     public static void season(int month, int day) {
-        
+
         //if statements to find what season the date is included in
         //then output the season
         if (month == 1 || month == 2 || (month == 12 && day >= 16) || (month == 3 && day <= 15)) {
